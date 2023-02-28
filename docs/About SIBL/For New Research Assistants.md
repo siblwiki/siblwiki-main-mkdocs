@@ -40,16 +40,18 @@ All volunteers and REU RAs in the psychology department must have:
 
 Before being allowed to run subjects, you must complete the certification training for human subjects online. It takes an hour or two, and when you are done, it will allow you email a certificate of completion that you can bring it to the lab manager during your first week in the lab.
 
-[Instructions](www.washington.edu/research/hsd/training/required-training/web-based-citi-training/) on the overall process.
+[Instructions](https://www.washington.edu/research/hsd/training/required-training/web-based-citi-training/) on the overall process.
 
 Once you finish the training, please email/send a message through Microsoft Teams the PDF of your Certification in the following naming format: 
 ```
 lastname_firstname_CITITrainingCertificate.pdf
 ```
 
-Note: 
+Notes: 
 1. Make sure you ONLY do the Basic course - Stage 1 "Research with Human Subjects"
+
 2. You are not required to take notes or memorize any of the information
+
 3. If you have already taken the training before, you can just take the Refresher course
 
 ---
