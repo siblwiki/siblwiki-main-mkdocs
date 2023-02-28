@@ -1,11 +1,9 @@
-# Obsidian Notes
+# Home
 
-Publish your public notes with MkDocs
+We are a social psychology lab at the Department of Psychology at University of Washington. We are interested in understanding how people's choices and behaviors are shaped by cultural factors such as stereotypes and social identity. Our lab is primarily concerned with developing and empirically testing theories that inform current social problems, particularly inequality and prejudice, in the hopes of bringing attention to these problems and working towards feasible solutions.
 
-## Hello World!
+For more information about our lab, visit our [lab website](http://depts.washington.edu/sibl/).
 
-The `index.md` in the `/docs` folder is the homepage you see here.
+For more information about instructions for various tasks, check out the side and search bar.
 
-The folders in `/docs` appear as the main sections on the navigation bar.
-
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
+For inquiry about updating the wiki, contact the lab manager.
