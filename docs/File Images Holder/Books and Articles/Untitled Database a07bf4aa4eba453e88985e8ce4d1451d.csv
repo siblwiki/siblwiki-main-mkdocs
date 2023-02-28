@@ -1,0 +1,4 @@
+﻿Name,Tags,Text
+One author,,[author last name] [publication year] [publication abbreviated title].pdf
+Two authors,,[author last name] & [author last name] [publication year] [publication abbreviated title].pdf
+Multiple authors,,[author last name] et al. [publication year] [publication abbreviated title].pdf
