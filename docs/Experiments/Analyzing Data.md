@@ -209,6 +209,8 @@ Anytime you need to create a new variable by performing a computation (e.g., add
 In **Target Variable**, type new variable name (weightedgpa)
 In **Numeric Expression**, type computation (MEAN(currentgpa, majorgpa)
 
+When creating composite variables (i.e. combining scale items into one variable), make sure to use the "mean" function rather than using "sum" or manually adding up the values and dividing by the number of scale items. This will prevent missing values in the data from resulting in a missing or inaccurate composite score.
+
 When computing variables, RAs should check the new variable to see if it has good correlation/reliability (e.g., Pearson’s r, Cronbach’s alpha).
 
 **When a new variable is created by combining *just* two variables** (as in this example), we use correlation to check the computed variable. To do this, go to **Analyze > Correlate > Bivariate.** 
