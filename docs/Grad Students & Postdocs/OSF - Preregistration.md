@@ -1,4 +1,5 @@
 All our studies (that aren’t pilots) are pre-registered on the [Open Science Framework](https://osf.io/) (OSF) portal. 
+
 - OSF is a free, open-source platform that connects and supports the research workflow, enabling scientists to increase efficiency and effectiveness of their research.
 - Researchers use OSF to collaborate, document, archive, share, and register research projects, materials, and data
 
@@ -15,6 +16,7 @@ We post 3 types of documents before papers are published. [Examples](https://osf
 - Some publications (e.g., JPSP) now also require making code public.
 
 Please see the [[#Checklist for Publishing Paper]] for things that should occur before the paper are posted. 
+
 - Sapna will also need to approve all OSF documents before they are posted and needs a minimum of 2 weeks to do the first round of checking of all the documents. 
 - Sapna typically does 3-4 times back and forth on these documents so leave yourself at least a couple of months once they are completed to having them posted. This time can be shortened if Sapna’s list of checks is done carefully and few to no errors are found.
 
@@ -71,5 +73,5 @@ Please follow this list to check your papers before submitting:
 
 9. Check for duplicates in data files
 
-10.  If syntax/code provided, run and compare to paper. Only analyses in paper should be in syntax.
+10. If syntax/code provided, run and compare to paper. Only analyses in paper should be in syntax.
 	- Syntax should be well commented and have a header with info
