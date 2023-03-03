@@ -1,4 +1,3 @@
-
 #### Grad Funds
 
 $1200 per graduate student (for primary advisees) while in SIBL. This can be used on SIBL-related expenses or necessary expenses to achieve professional goal (e.g., conference travel, computer, Prolific on early ideas, workshops, poster printing).
@@ -13,35 +12,40 @@ Detail about postdoc funding can be found in the offer letter.
 
 #### Project Funding
 
-Graduate students/postdocs, who have a project idea that is not under a grant, can speak to Sapna about getting funds to pilot it if there are available non-grant funds.  Other sources of funding for graduate students include:
+Graduate students/postdocs, who have a project idea that is not under a grant, can speak to Sapna about getting funds to pilot it if there are available non-grant funds.  Other sources of funding for graduate students included below.
 
-#### Other Funding Opportunities
+#### Lab Emergency Fund
+Details coming soon (Check Teams -> General Channel if you are curious)
 
-##### UW Funding
+---
 
-Robert C. Bolles Graduate Fellowship Fund[[SC1]](#_msocom_1) 
+### Other Funding Opportunities
 
-o   Grants may cover all or part of tuition, support for living expenses, books, fees and other educational expenses.
+#### UW Funding
 
-Eleanor Carlson Endowed Fellowship
+**Robert C. Bolles Graduate Fellowship Fund**
 
-o   Supports graduate students in the Department of Psychology conducting research on the effects of socio-economic, cultural, family, or educational background on the ability to learn the skills and acquire motivations that contribute to success and psychological well-being.
+- Grants may cover all or part of tuition, support for living expenses, books, fees and other educational expenses.
 
-Friends of Psychology Fund
+**Eleanor Carlson Endowed Fellowship**
 
-o   Unrestricted support that can be used to help undergraduate and graduate students, faculty, and the full range of departmental programs, wherever the need is greatest.
+- Supports graduate students in the Department of Psychology conducting research on the effects of socio-economic, cultural, family, or educational background on the ability to learn the skills and acquire motivations that contribute to success and psychological well-being.
 
-Earl Hunt Graduate Fellowship Fund
+**Friends of Psychology Fund**
 
-o   Supports graduate students in the Department of Psychology whose original, independent research extends beyond the domain of their faculty advisors.
+- Unrestricted support that can be used to help undergraduate and graduate students, faculty, and the full range of departmental programs, wherever the need is greatest.
 
-Psychology Diversity Fund
+**Earl Hunt Graduate Fellowship Fund**
 
-o   Assist graduate students who add diversity to the Dept. of Psychology with a preference for underrepresented students of color
+- Supports graduate students in the Department of Psychology whose original, independent research extends beyond the domain of their faculty advisors.
 
-##### SPSP Funding
+**Psychology Diversity Fund**
 
-[**Jenessa Shapiro Graduate Research Award**](https://spsp.org/awards/diversity/jenessa-shapiro-graduate-research-award)
+- Assist graduate students who add diversity to the Dept. of Psychology with a preference for underrepresented students of color
+
+#### SPSP Funding
+
+[Jenessa Shapiro Graduate Research Award](https://spsp.org/awards/diversity/jenessa-shapiro-graduate-research-award)
 
 Provides assistance to a graduate student from an underrepresented background with the cost of conducting research in personality and/or social psychology up to $1,000
 
@@ -57,7 +61,7 @@ Use these funds in their efforts to develop community and professional developme
 
 $1000 honorarium to honor a social or personality psychologist who has applied theoretical and/or empirical psychological discoveries and advances to the understanding and improvement of important practical problems across his or her career.
 
-##### APS Funding
+#### APS Funding
 
 [NSF Graduate Research Fellowship Program](https://beta.nsf.gov/funding/opportunities/nsf-graduate-research-fellowship-program-grfp) (GRFP)
 
@@ -71,7 +75,7 @@ o   $18,000 to support the investigation of how personality, culture, and envi
 
 o   Supports projects focused on advancing racial equity in STEM education and workforce development that are led or co-developed by individuals and communities most impacted by the inequities caused by systemic racism.
 
-##### APA Funding
+#### APA Funding
 
 [APA Science Student Council’s Early Graduate Student Researcher Award](https://www.apa.org/about/awards/scistucoun-earlyre) (EGSRA)
 
@@ -85,7 +89,7 @@ o   APA offers 30-40 $1000 grants to support graduate students with their diss
 
 o   $1000 of funding for students conducting basic science research variety of psychological areas, not limited to Industrial/Organizational, Personality and Individual Differences, or Social. Grants are awarded on the basis of the quality of the research proposal, and may be used to conduct master’s theses, dissertations, or other graduate student research.
 
-##### SPSSI Funding
+#### SPSSI Funding
 
 [Grants-In-Aid Program](https://www.spssi.org/index.cfm?fuseaction=page.viewpage&pageid=730)
 

@@ -114,7 +114,7 @@ When presenting, you will need to bring paper pamphlet handouts with you. These 
 
 - Students are encouraged to dress professionally. Participating in this symposium would be an excellent experience to gain research skills, critical thinking, crafting research writings, and public speaking. This is also a great addition into your resume and/or CV.
 
-- Once accepted into your symposium, it’s recommended to checkout workshops such as the [abstract writing](www.washington.edu/undergradresearch/workshops/abstracts/) and [poster design](www.washington.edu/undergradresearch/workshops/posters/) to better prepare yourself. [More info](www.washington.edu/undergradresearch/symposium/](http://www.washington.edu/undergradresearch/symposium/) on the symposium
+- Once accepted into your symposium, it’s recommended to checkout workshops such as the [abstract writing](https://www.washington.edu/undergradresearch/old-workshops/abstracts/) and [poster design](https://www.washington.edu/undergradresearch/old-workshops/posters/) to better prepare yourself. [More info](http://www.washington.edu/undergradresearch/symposium/) on the symposium
 
 ##### How can people apply?
 - An application process is required to submit. Deadline is usually in February. It is recommended to get a head start early on November.  Here are the [guidelines](www.washington.edu/undergradresearch/symposium/application-info/](http://www.washington.edu/undergradresearch/symposium/application-info/) of the application.
@@ -204,7 +204,6 @@ This timeline is intended to give students and mentors an idea of the Symposium 
 
 The Ronald E. McNair Program prepares undergraduates for doctoral study through involvement in research and scholarly activities. The purpose of the McNair Program is to assist in the academic and professional development of undergraduates whose goals are to teach and research at the college level. In order to help students achieve those goals, the program sponsors and supports undergraduate experiences that lay the foundation for a successful graduate school experience. By fostering mentoring relationships, promoting undergraduate research, assisting with GRE preparation, and encouraging students to attend and present at conferences, we aim to produce highly competitive graduate school applicants who have the skills and experiences necessary to succeed in their programs.
 
-
 - **Eligibility Requirements**
     - must be a U.S. citizen or permanent resident
     - must be a low-income student who is also a first-generation college student (for detailed descriptions, click on the links); or
@@ -214,8 +213,8 @@ The Ronald E. McNair Program prepares undergraduates for doctoral study through 
     - must have at least one year remaining before graduation (i.e., if you are graduating within the year, you are not eligible for the program)
     - must have a minimum cumulative GPA of: 2.8 (sophomores), 3.0 (juniors), 3.2 (seniors)
     - Must have STRONG desire to attain a Ph.D.
+
 - **Applications**
-    
     Usually applications are due sometime in mid-April, please check UW McNair’s website to find the submission date of that particular year.
     
     A completed application consists of:
@@ -226,8 +225,8 @@ The Ronald E. McNair Program prepares undergraduates for doctoral study through 
     - A copy of your financial award letter
     - One or two letters of recommendation, depending on your year in school (See instruction on application form – at least one must be from a faculty member)
     - A writing sample of at least two pages that was completed within the last year (e.g., a final paper from a course)
+
 - **Benefits for McNair Scholars**
-    
     The McNair Program offers a challenging and supportive environment that is conducive to learning and personal/professional development.
     
     As a McNair Scholar, you will receive the following benefits:

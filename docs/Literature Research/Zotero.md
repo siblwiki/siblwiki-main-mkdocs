@@ -1,29 +1,24 @@
+Zotero is a free, easy-to-use tool to help you collect, organiza, cite, and auto-generate reference page.
+
+Contact lab manager for SIBL log-in credentials
+
+---
+
 ### Logging in
 
-There are two versions of Zotero: a website version and an app version. The app version has been downloaded onto the RA computers.
+There are two versions of Zotero: a website version and an app version (already been downloaded onto the RA computers in the lab).
 
-You may use either the web version at:
-
-<aside>
-🖱️ [https://www.zotero.org/user/login/](https://www.zotero.org/user/login/)
-
-</aside>
+You may use either this [web version](https://www.zotero.org/user/login/)
 
 ![[File Images Holder/Zotero/zoteroLogin.png]]
 
 
-Or the app version by clicking on the desktop icon or downloading the app and Chrome plug-in at:
-
-<aside>
-🖱️ [https://www.zotero.org/download/](https://www.zotero.org/download/)
-
-</aside>
+OR downloading this [app version](https://www.zotero.org/download/) (including Zotero and its Chrome plug-in) OR clicking on the desktop icon
 
 ![[File Images Holder/Zotero/zoteroDesktop.png]]
 
 **Notes.**
 
-- Contact lab manager for SIBL log-in credentials
 - Make sure you have the most updated version of Zotero and sync your Zotero before making changes.
 
 ## **Saving materials onto Zotero**
@@ -77,19 +72,19 @@ You can also edit a citation by clicking the “Add/Edit” Citation button and 
 As of April 24, 2020, Zotero released a 7th edition package for APA. You’ll have to select it under the “Export” tab to make sure Zotero formats in-text citations and references according to the 7th edition update. One consistent mistake that has been noted is that for website citations, the title of the article should be italicized and the title of the website should not be italicized, but currently, these two are switched – website title is italicized and article title is not.
 
 You can apply rich text formatting to the citations by manually adding the following HTML-like tags to fields in your Zotero library:
+```
+<i> and </i> for *italics*
 
-- <i> and </i> for *italics*
-- <b> and <b> for **bold**
-- <sub> and </sub> for
-    
-    subscript
-    
-- <sup> and </sp> for
-    
-    superscript
-    
-- <span style = “font-variant:small-caps;”> and </span> for smallcaps
-- <span class = “nocase”> and </span> to suppress capitalization rules (e.g., for foreign phrases within English titles)
+b> and <b> for **bold**
+
+<sub> and </sub> for subscript
+ 
+<sup> and </sp> for superscript
+
+<span style = “font-variant:small-caps;”> and </span> for smallcaps
+
+<span class = “nocase”> and </span> to suppress capitalization rules (e.g., for foreign phrases within English titles)
+```
 
 Zotero will automatically replace these tags by the specified formatting in bibliograhic output. For example, “<i>Pseudomonas aureofaciens</i> nov. spec. and its pigments” will become “*Pseudomonas aureofaciens* nov. spec. and its pigments”.
 
