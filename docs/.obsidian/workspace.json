@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a6b9d6132b8a1dba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Grad Students & Postdocs/Qualtrics Pre-launch Checklist.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -159,27 +171,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a7a7937d8da5ac4",
+  "active": "a6b9d6132b8a1dba",
   "lastOpenFiles": [
+    "Grad Students & Postdocs/Pre-Launch Checklist.md",
+    "Grad Students & Postdocs/OSF - How to Make OSF Documents.md",
+    "Grad Students & Postdocs/OSF - Preregistration.md",
+    "Grad Students & Postdocs/Power Analyses using G*Power.md",
+    "Grad Students & Postdocs/Paper Submission Checklist.md",
+    "Preparing for Publications/Questionnaire Word Checking.md",
+    "Other Resources/UW RA Opportunities.md",
     "File Images Holder/Qualtrics Pre-launch Checklist/qualtrics_closeSurvey.png",
     "File Images Holder/Qualtrics Pre-launch Checklist/qualtrics_notDo.png",
     "File Images Holder/Qualtrics Pre-launch Checklist/qualtrics_do.png",
     "File Images Holder/Qualtrics Pre-launch Checklist",
-    "Grad Students & Postdocs/Pre-Launch Checklist.md",
     "Grad Students & Postdocs/Qualtrics Pre-launch Checklist.md",
     "Grad Students & Postdocs/Online Data Collection.md",
-    "Grad Students & Postdocs/Paper Submission Checklist.md",
     "Literature Research/Zotero.md",
     "Preparing for Publications/Data Entry Checking.md",
     "Literature Research/Resources.md",
-    "Other Resources/UW RA Opportunities.md",
-    "Grad Students & Postdocs/Power Analyses using G*Power.md",
     "Grad Students & Postdocs/Resources.md",
     "Other Resources/Updating Lab Website.md",
-    "Grad Students & Postdocs/OSF - How to Make OSF Documents.md",
-    "Preparing for Publications/Questionnaire Word Checking.md",
     "Preparing for Publications/Questionnaire Data Checking.md",
-    "Grad Students & Postdocs/OSF - Preregistration.md",
     "File Images Holder/OSF",
     "File Images Holder/OSF/osf_titleFormat.png",
     "About SIBL/For New Research Assistants.md",
