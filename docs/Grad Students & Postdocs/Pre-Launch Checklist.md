@@ -42,7 +42,9 @@ Make sure all of the materials have been created:
 **NOTE**: If you’re setting up the survey yourself or asking someone else in the lab to do it for you (e.g., lab manager), please remember to *give instructions on the filters* you want added
 
 - Some common filters include: gender, age, and participation in previous ORPP studies (this is to filter out participants from previous iterations of the project)
+
 - If you’re trying to recruit equal numbers of different groups (e.g., gender), you will have to duplicate the Qualtrics to have as many copies as there are groups (e.g., women and men participants -> 2 surveys). This is because each study on ORPP provides a unique redirect link, and only 1 redirect link can be entered per Qualtrics
+
 
 ### Online MTurk studies:
 
@@ -73,8 +75,11 @@ Make sure all of the materials have been created:
 - Top up the account by clicking on the dollar amount in the top-right
 - Add just enough money so that after launching the study, the amount is close to $0.00
 
-**NOTE**: if you’re setting up the survey yourself or asking someone else in the lab to do it for you (e.g., lab manager), please remember to give instructions on the filters you want added
+**NOTE**: if you’re setting up the survey yourself or asking someone else in the lab to do it for you (e.g., lab manager), please remember to give instructions on the filters you want added.
 
 - Prolific is based in the UK, so without any filters, you may get many participants from the UK
+
 - Some common filters include: gender, race, ethnicity, country of residence, and participation in previous Prolific studies (this is to not recruit participants who have participated in previous iterations of the project)
+
 - If you’re trying to recruit equal numbers of different groups (e.g., racial groups), you will have to duplicate the Qualtrics to have as many copies as there are groups (e.g., Black and White participants  2 surveys). This is because each study on Prolific provides a unique completion code link, and only 1 completion code link can be entered per Qualtrics
+

@@ -1,8 +1,12 @@
 
 Postdocs and graduate students are **free to hire their own research assistants** (RA) through:
+
 - Accessing the applicant pool that applies through the SIBL website or UW’s 499 page (see “SIBL RA App” survey in the Lab Manager folder on SIBL Qualtrics account). 
+
 - Classes you teach or TA
+
 - Organizations you are a part of, etc. 
+
 
 It is up to you whether you want the potential RA to complete the SIBL RA application or go through some other method of assessing their interest, qualifications, etc. If you do not want to hire your own RAs in a particular quarter, you are welcome to check with the lab managers to see whether there is extra RA time available to help on shorter-term projects. The **lab managers will communicate with Sapna** to assess where the task will fall in terms of *lab priorities*.
 
