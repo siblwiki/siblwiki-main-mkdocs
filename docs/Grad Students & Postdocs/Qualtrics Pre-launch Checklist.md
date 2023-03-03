@@ -39,3 +39,7 @@ Please aslo double check the [[Pre-Launch Checklist]] for your online launching 
 		- If there are missing blocks of data, something is wrong with the survey
 - Delete preview responses, test responses, and responses in progress.
 - Publish survey
+
+IMPORTANT NOTEs:
+- After data collection is completed, make sure to close the Qualtrics survey right away to avoid unwanted extra participants.
+![[qualtrics_closeSurvey.png]]
