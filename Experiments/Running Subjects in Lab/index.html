@@ -1,0 +1,809 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../Prepare%20New%20Survey%20Using%20Qualtrics/" rel="prev"/>
+<link href="../Running%20Subjects%20on%20ORPP/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.0" name="generator"/>
+<title>Running Subjects in Lab - SIBL Wiki</title>
+<link href="../../assets/stylesheets/main.402914a4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#expectations">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SIBL Wiki" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SIBL Wiki
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Running Subjects in Lab
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SIBL Wiki" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    SIBL Wiki
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About SIBL
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          About SIBL
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/For%20New%20Research%20Assistants/">
+        For New Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Expectations/">
+        Lab Expectations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Location/">
+        Lab Location
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Roles%20and%20Structure/">
+        Lab Roles and Structure
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Data Analysis
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Analyzing%20Data/">
+        Analyzing Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Power%20Analyses%20using%20G%2APower/">
+        Power Analyses using G*Power
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Simple%20Effects%20in%20SPSS%20using%20EMMEANS%20code/">
+        Simple Effects in SPSS using EMMEANS code
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Experiments
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Experiments
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Getting%20IRB%20Approval/">
+        Getting IRB Approval
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Handling%20Data/">
+        Handling Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Prepare%20New%20Survey%20Using%20Qualtrics/">
+        Prepare New Survey Using Qualtrics
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Running Subjects in Lab
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Running Subjects in Lab
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expectations">
+    Expectations:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#materials">
+    Materials
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-a-study-in-the-lab">
+    Setting-up a Study in the Lab
+  </a>
+<nav aria-label="Setting-up a Study in the Lab" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-materials-from-the-study-boxes">
+    Getting materials from the study boxes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-a-study-done-on-the-computer">
+    For a study done on the computer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-a-study-not-done-on-the-computer">
+    For a study not done on the computer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-subjects-computers">
+    The subjects’ computers
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-the-experiment">
+    Before the Experiment
+  </a>
+<nav aria-label="Before the Experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-subjects-from-the-waiting-area">
+    Getting Subjects from the Waiting Area
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-subjects-are-in-the-lab">
+    When subjects are in the lab
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#during-the-experiment">
+    During the experiment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#after-the-experiment">
+    After the experiment
+  </a>
+<nav aria-label="After the experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-debrief-subjects">
+    How to Debrief Subjects
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#after-the-experiment_1">
+    After the Experiment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-you-are-done">
+    When you are done
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-problems-in-the-lab">
+    Common Problems in the Lab
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Running%20Subjects%20on%20ORPP/">
+        Running Subjects on ORPP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Surveying%20on%20Campus/">
+        Surveying on Campus
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Grad Students &amp; Postdocs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Grad Students &amp; Postdocs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Administrators/">
+        Administrators
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Getting%20feedback/">
+        Getting feedback
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Lab%20Expectations%20for%20Grads%20%26%20Postdocs/">
+        Lab Expectations for Grads &amp; Postdocs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Onboarding%20Checklist/">
+        Onboarding Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Online%20Data%20Collection/">
+        Online Data Collection
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Pre-Launch%20Checklist/">
+        Pre Launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Qualtrics%20Pre-launch%20Checklist/">
+        Qualtrics Pre launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Recruiting%20Research%20Assistants/">
+        Recruiting Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Resources/">
+        Resources
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Literature Research
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Literature Research
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Books%20and%20Articles/">
+        Books and Articles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Literature%20Research/">
+        Literature Research
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Resources/">
+        Resources
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Zotero/">
+        Zotero
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Other Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Other Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/UW%20RA%20Opportunities/">
+        UW RA Opportunities
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/Updating%20Lab%20Website/">
+        Updating Lab Website
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Preparing for Publications
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Preparing for Publications
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Data%20Entry%20Checking/">
+        Data Entry Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Paper%20Submission%20Checklist/">
+        Paper Submission Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Proofreading/">
+        Proofreading
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Data%20Checking/">
+        Questionnaire Data Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Word%20Checking/">
+        Questionnaire Word Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaires%20vs.%20Results%20Checking/">
+        Questionnaires vs. Results Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Reference%20Checking/">
+        Reference Checking
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Preregistration with OSF
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          Preregistration with OSF
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/How%20to%20Make%20OSF%20Documents/">
+        How to Make OSF Documents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/Preregistration/">
+        Preregistration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expectations">
+    Expectations:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#materials">
+    Materials
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-a-study-in-the-lab">
+    Setting-up a Study in the Lab
+  </a>
+<nav aria-label="Setting-up a Study in the Lab" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-materials-from-the-study-boxes">
+    Getting materials from the study boxes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-a-study-done-on-the-computer">
+    For a study done on the computer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-a-study-not-done-on-the-computer">
+    For a study not done on the computer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-subjects-computers">
+    The subjects’ computers
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-the-experiment">
+    Before the Experiment
+  </a>
+<nav aria-label="Before the Experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-subjects-from-the-waiting-area">
+    Getting Subjects from the Waiting Area
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-subjects-are-in-the-lab">
+    When subjects are in the lab
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#during-the-experiment">
+    During the experiment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#after-the-experiment">
+    After the experiment
+  </a>
+<nav aria-label="After the experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-debrief-subjects">
+    How to Debrief Subjects
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#after-the-experiment_1">
+    After the Experiment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#when-you-are-done">
+    When you are done
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-problems-in-the-lab">
+    Common Problems in the Lab
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Running Subjects in Lab</h1>
+<h2 id="expectations">Expectations:<a class="headerlink" href="#expectations" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>Your most important duties</strong><ul>
+<li>The majority of our data is collected through running subjects in lab.</li>
+</ul>
+</li>
+<li><strong>Follow instructions and scripts carefully</strong><ul>
+<li>You are working with human subjects and the lab MUST adhere to strict standards and guidelines in this process.</li>
+<li>All scripts have been IRB approved and straying from them has extremely negative consequences for the lab and the people in it (including shutting down the lab and potential lawsuits).</li>
+</ul>
+</li>
+</ul>
+<h2 id="materials">Materials<a class="headerlink" href="#materials" title="Permanent link">¶</a></h2>
+<ul>
+<li>The script</li>
+<li>Subject ID logsheet</li>
+<li>Copies of the consent form/info statement</li>
+<li>Copies of the debriefing sheet (if paper), or bookmarked debrief on RA computers</li>
+<li>Copies of the questionnaire (if the questionnaire is not on the computer), or bookmarked questionnaires on subject computers</li>
+<li>Pens (for on-campus or signed consent forms)</li>
+</ul>
+<h2 id="setting-up-a-study-in-the-lab">Setting-up a Study in the Lab<a class="headerlink" href="#setting-up-a-study-in-the-lab" title="Permanent link">¶</a></h2>
+<ul>
+<li>Arrive <strong>15 minutes</strong> before your subject running time.</li>
+<li>Log on to ORPP and figure out how many participants are scheduled.<ul>
+<li>Write the names of each participant on a scratch piece of paper to bring out with you when fetching subjects from the waiting area (participants will often forget which study they have signed up for).</li>
+</ul>
+</li>
+<li>Set up the appropriate number of computers or questionnaires.</li>
+</ul>
+<p><strong>Note</strong>. If there are only 1-2 subjects coming in during a single time slot place each into the individual rooms (computers 1 and 2). If 3 or more subjects are scheduled for a single time slot, then try to spread them out between computers as much as possible.</p>
+<h3 id="getting-materials-from-the-study-boxes">Getting materials from the study boxes<a class="headerlink" href="#getting-materials-from-the-study-boxes" title="Permanent link">¶</a></h3>
+<ol>
+<li><em>Materials folder</em> - have logsheet, script, and debrief sheets</li>
+<li><em>Info statements OR Consent forms (blank)</em> <ul>
+<li>Put any signed consent into the study box under a different folder (e.g. “signed consents”). Generally, we don’t use signed consent forms, but this is the procedure in the event that we do use them.</li>
+</ul>
+</li>
+<li><em>Questionnaires</em> - Some studies that are not done on the computer will have folders for storing all of the blank and completed questionnaires. If they have multiple conditions, the blank questionnaire may be in multiple folders.</li>
+</ol>
+<h3 id="for-a-study-done-on-the-computer">For a study done on the computer<a class="headerlink" href="#for-a-study-done-on-the-computer" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Open up a browser from the desktop and load the questionnaire you are running by selecting the study you are running from the list of bookmarks. Enter the subject ID and condition as follows:</p>
+<p>Subject ID:  <strong>from Subject ID logsheet</strong></p>
+<p>Condition:  <strong>refer to the Subject ID logsheet</strong></p>
+</li>
+<li>
+<p>Fill out all fields on the <strong>Subject ID logsheet</strong> (i.e. name, date, time, computer number).</p>
+</li>
+<li>Set out an info statement or a consent form and pen in front of each computer (see Lab Space section) if necessary.</li>
+</ol>
+<h3 id="for-a-study-not-done-on-the-computer">For a study not done on the computer<a class="headerlink" href="#for-a-study-not-done-on-the-computer" title="Permanent link">¶</a></h3>
+<ol>
+<li>Take out a <em>blank questionnaire</em> and write the subject number in the upper right corner.</li>
+<li>Fill out all fields on the <strong>Subject ID logsheet</strong> (i.e. your name, date, time, computer number).</li>
+<li>Set out a consent form and pen in front of each computer and move the keyboard so that the subject has table space to write (see Lab Space section).</li>
+</ol>
+<h3 id="the-subjects-computers">The subjects’ computers<a class="headerlink" href="#the-subjects-computers" title="Permanent link">¶</a></h3>
+<ol>
+<li>The <em>computer</em> - The screen should show the appropriate study on Qualtrics</li>
+<li><em>Consent form/info statement</em> - Should be placed directly in front of where a participant would be sitting.</li>
+<li><em>Chair</em> - Should be pushed in<ul>
+<li>This is especially important for the set-up in the big room since it can get cluttered when multiple participants share a timeslot.</li>
+</ul>
+</li>
+<li><em>Computer number</em> - Note which computer # the subject was on<ul>
+<li>All computers are labeled 1 through 9</li>
+</ul>
+</li>
+</ol>
+<p><strong>Note.</strong> For some studies, we may ask you to set up the computer station differently, whether with a different program, a different arrangement, or different equipment. Make sure you know what a participant needs for a study before you start setting up!</p>
+<h2 id="before-the-experiment">Before the Experiment<a class="headerlink" href="#before-the-experiment" title="Permanent link">¶</a></h2>
+<h3 id="getting-subjects-from-the-waiting-area">Getting Subjects from the Waiting Area<a class="headerlink" href="#getting-subjects-from-the-waiting-area" title="Permanent link">¶</a></h3>
+<ol>
+<li>At the appropriate time, check for subjects in the waiting area (Guthrie 206). Call out the first names you wrote down earlier from a scratch sheet of paper and confirm with their last names.</li>
+<li>Students are often late to the experiments. When you have the subjects who arrived on time settled and started, check the waiting area 5 minutes and 10 minutes after the experiment was scheduled to begin.</li>
+</ol>
+<h3 id="when-subjects-are-in-the-lab">When subjects are in the lab<a class="headerlink" href="#when-subjects-are-in-the-lab" title="Permanent link">¶</a></h3>
+<ol>
+<li>Bring subjects into the main room and follow the script for the study
+Ask the subjects to sit at one of the computers you have readied for the experiment.</li>
+<li>Put the completed consent forms in consent forms completed folder in the appropriate file box if necessary. Keep the doors to the subject rooms closed.</li>
+</ol>
+<h2 id="during-the-experiment">During the experiment<a class="headerlink" href="#during-the-experiment" title="Permanent link">¶</a></h2>
+<ol>
+<li>Double check that all the names on the consent forms you collected match those who are signed up in ORPP.</li>
+<li>Grant subject participation credit or mark no show in ORPP</li>
+<li>Prepare debriefing forms (online. Select from bookmark in browser from an RA computer) for each subject</li>
+</ol>
+<p><strong>Note.</strong> While the experiment is being run, there might be other tasks to do (such as data entry at the beginning of the quarter). If not, Sapna doesn’t mind if you do homework/study/read but please be alert in case a subject has a question or concern.  Please keep distractions and noise to a minimum. Turn off cell phones and limit drinks and snacks to the meeting room.</p>
+<h2 id="after-the-experiment">After the experiment<a class="headerlink" href="#after-the-experiment" title="Permanent link">¶</a></h2>
+<h3 id="how-to-debrief-subjects">How to Debrief Subjects<a class="headerlink" href="#how-to-debrief-subjects" title="Permanent link">¶</a></h3>
+<p>When the subject has completed a study in our lab, we often follow it up with a debriefing. During a debriefing, you will sit down with one or more subjects in main room and ask a series of questions to learn the subject’s reaction to the study, to see if the subject was paying attention, to see if it was too boring, offensive, etc.</p>
+<ol>
+<li>Subjects will come out to you. Make sure you set up the debrief (either paper or on the computer) before they come out. Ask subjects to wait in their room if they all finish at the same time or one is finished while you are still debriefing another. Debrief subjects in the order that they finish the study.</li>
+<li>When the subject has finished the study, bring them to sit in the main room, or wherever you choose to do the debriefing, and have both a chair for the subject and the debriefing form ready.</li>
+<li>Speak QUIETLY if there are subjects still doing the study. If subjects come out of their rooms in the middle of a debriefing, ask them to wait in their rooms until you come and get them.</li>
+<li>If there are debrief questions, don’t let the subject get away with not really answering them. Ask questions to clarify the subject’s answer and make sure that they are not giving you false information.</li>
+<li>Don’t write out full sentences for participant responses to debrief questions. Listen to the subject’s entire response and summarize it. You may even repeat back what you have written to the subject to make sure you got it right.</li>
+</ol>
+<h3 id="after-the-experiment_1">After the Experiment<a class="headerlink" href="#after-the-experiment_1" title="Permanent link">¶</a></h3>
+<ol>
+<li>Follow the script. Tell the subjects what the purpose of the study is or have them read the debriefing summary (if available) and have them hand it back to you when they are done. Ask if they have any questions. Try to answer questions to the best of your ability – for the tough questions it is best to refer them to the graduate student in charge of the study, the lab manager, or Sapna.</li>
+<li>Thank them for coming in and ask them to not tell anyone what the study is about, what they did here, or the purpose. Lastly, show them the way out.</li>
+<li>Submit the completed debriefing forms and if needed, write any significant notes (minor issues and things to note) onto the notes sections on the <em>Subject ID Logsheet</em>.</li>
+<li>If there are minor problems that the subjects bring up, you or the subject can write down any problems on the <em>Subject ID Logsheet</em>. If there are major problems, please contact or find the lab manager *see start of instructions for contact information.</li>
+</ol>
+<h3 id="when-you-are-done"><strong>When you are done</strong><a class="headerlink" href="#when-you-are-done" title="Permanent link">¶</a></h3>
+<ol>
+<li>Close the browser on all the computers</li>
+<li>Organize the experiment room and forms – please double check and make sure you leave the lab in a condition that is equal to or better than when you left it. We are responsible for keeping our own lab stocked and clean, that means emptying the recycle bin when it gets full and wiping down the desks when they get messy. A clean lab is a better (and healthier) working environment for everyone!</li>
+<li>Also double check to make sure there are enough copies of forms for the next experimenter.</li>
+<li>Turn off the monitors</li>
+<li>Turn off all lights and air filter before you leave. (<strong>Computers stay on.</strong>)</li>
+</ol>
+<h2 id="common-problems-in-the-lab">Common Problems in the Lab<a class="headerlink" href="#common-problems-in-the-lab" title="Permanent link">¶</a></h2>
+<p><strong>A subject arrives 20 minutes late and wants to complete the study.</strong></p>
+<p><em>If there is space in the next time slot, ask them if they can wait for that one. If not, tell them that the study began 20 minutes ago and that they can sign up for a future study. In this case, log on to ORPP to give 0 credit for no-show.</em></p>
+<p><strong>The study is taking more time than was allotted to it.</strong></p>
+<p><em>When there are about five minutes left, remind everyone that it has been almost half an hour (or whatever the allotted time might be) because some students may have class afterwards. In my opinion, it is okay that they do not finish and give them credit for 1/2 hour. However, sometimes subjects want to complete the study and if you know there is room during the next hour, then let them stay longer and grant them credit for 1 hour (or half an hour more than the allotted time). Try not to let them stay too long because it pushes things behind. If they don’t have time for debriefing, just ask them the first question and let them go.</em></p>
+<p><strong>Two subjects are talking to each other during the experiment.</strong></p>
+<p><em>Sometimes subjects might comment about the study to another friend in the same study.We  usually ignore it when it happens a few times, but if it is noticeably distracting, please ask them not to talk during the experiment and note it in the logsheet.</em></p>
+<p><strong>A subject is listening to music.</strong></p>
+<p><em>Please ask them to turn off and remove their headphones.</em></p>
+<p><strong>A subject’s cell phone rings during the experiment.</strong></p>
+<p><em>Please ask them to turn off the cell phone.</em></p>
+<p><strong>You don’t know whether or not to grant credit to a participant.</strong></p>
+<p><em>This should only be the case when something malfunctions or when there are not enough computers for subjects, but you should just give credit rather than argue it out.</em></p>
+<p><strong>The experiment is not working!</strong></p>
+<ul>
+<li><em>Don’t panic.</em></li>
+<li><em>Sometimes you may need to have the subject start over or move to a different computer if a program is not working.</em></li>
+<li><em>If you cannot figure out why, just explain to the subject that the computer is malfunctioning and that you will give them credit. Make sure you indicate anything like that on the notes sheet.</em></li>
+</ul>
+<p><strong>What should I do if I don’t know the answer to a question?</strong></p>
+<p><em>Try your best but it’s completely fine to say that you don’t know. Refer the subject to the lab manager.</em></p>
+<p><strong>You are sick (or have a major conflict) and can’t run subjects.</strong></p>
+<p><em>Try your best to never miss your subjects, but if you ever fail to meet your subjects, call one of the other RAs to see if they can cover for you, and if that fails then let the lab manager, or a graduate student know ASAP.</em></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ce72ebac.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

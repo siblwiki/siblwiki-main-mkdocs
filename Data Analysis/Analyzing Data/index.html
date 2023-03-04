@@ -1,0 +1,807 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../About%20SIBL/Lab%20Roles%20and%20Structure/" rel="prev"/>
+<link href="../Power%20Analyses%20using%20G%2APower/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.0" name="generator"/>
+<title>Analyzing Data - SIBL Wiki</title>
+<link href="../../assets/stylesheets/main.402914a4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#step-1-gathering-the-data">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SIBL Wiki" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SIBL Wiki
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Analyzing Data
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SIBL Wiki" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    SIBL Wiki
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About SIBL
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          About SIBL
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/For%20New%20Research%20Assistants/">
+        For New Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Expectations/">
+        Lab Expectations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Location/">
+        Lab Location
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Roles%20and%20Structure/">
+        Lab Roles and Structure
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Data Analysis
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Analyzing Data
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Analyzing Data
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-gathering-the-data">
+    Step 1: Gathering the data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-merge-logsheet-and-data-review-debriefs">
+    Step 2: Merge logsheet and data, review debriefs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-making-the-data-spss-compatible">
+    Step 3: Making the data SPSS compatible
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-reviewing-data-in-spss">
+    Step 4: Reviewing data in SPSS
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-selecting-cases-labeling-values-recoding-variables-computing-variables">
+    Step 5: Selecting cases, labeling values, recoding variables, computing variables
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-6-determining-appropriate-analyses">
+    Step 6: Determining appropriate analyses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-7-running-analyses">
+    Step 7: Running Analyses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-8-pasting-output">
+    Step 8: Pasting output
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Power%20Analyses%20using%20G%2APower/">
+        Power Analyses using G*Power
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Simple%20Effects%20in%20SPSS%20using%20EMMEANS%20code/">
+        Simple Effects in SPSS using EMMEANS code
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Experiments
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Experiments
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Getting%20IRB%20Approval/">
+        Getting IRB Approval
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Handling%20Data/">
+        Handling Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Prepare%20New%20Survey%20Using%20Qualtrics/">
+        Prepare New Survey Using Qualtrics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Running%20Subjects%20in%20Lab/">
+        Running Subjects in Lab
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Running%20Subjects%20on%20ORPP/">
+        Running Subjects on ORPP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Experiments/Surveying%20on%20Campus/">
+        Surveying on Campus
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Grad Students &amp; Postdocs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Grad Students &amp; Postdocs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Administrators/">
+        Administrators
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Getting%20feedback/">
+        Getting feedback
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Lab%20Expectations%20for%20Grads%20%26%20Postdocs/">
+        Lab Expectations for Grads &amp; Postdocs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Onboarding%20Checklist/">
+        Onboarding Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Online%20Data%20Collection/">
+        Online Data Collection
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Pre-Launch%20Checklist/">
+        Pre Launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Qualtrics%20Pre-launch%20Checklist/">
+        Qualtrics Pre launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Recruiting%20Research%20Assistants/">
+        Recruiting Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Resources/">
+        Resources
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Literature Research
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Literature Research
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Books%20and%20Articles/">
+        Books and Articles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Literature%20Research/">
+        Literature Research
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Resources/">
+        Resources
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Zotero/">
+        Zotero
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Other Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Other Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/UW%20RA%20Opportunities/">
+        UW RA Opportunities
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/Updating%20Lab%20Website/">
+        Updating Lab Website
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Preparing for Publications
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Preparing for Publications
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Data%20Entry%20Checking/">
+        Data Entry Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Paper%20Submission%20Checklist/">
+        Paper Submission Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Proofreading/">
+        Proofreading
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Data%20Checking/">
+        Questionnaire Data Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Word%20Checking/">
+        Questionnaire Word Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaires%20vs.%20Results%20Checking/">
+        Questionnaires vs. Results Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Reference%20Checking/">
+        Reference Checking
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Preregistration with OSF
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          Preregistration with OSF
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/How%20to%20Make%20OSF%20Documents/">
+        How to Make OSF Documents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/Preregistration/">
+        Preregistration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-gathering-the-data">
+    Step 1: Gathering the data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-merge-logsheet-and-data-review-debriefs">
+    Step 2: Merge logsheet and data, review debriefs
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-making-the-data-spss-compatible">
+    Step 3: Making the data SPSS compatible
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-reviewing-data-in-spss">
+    Step 4: Reviewing data in SPSS
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-selecting-cases-labeling-values-recoding-variables-computing-variables">
+    Step 5: Selecting cases, labeling values, recoding variables, computing variables
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-6-determining-appropriate-analyses">
+    Step 6: Determining appropriate analyses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-7-running-analyses">
+    Step 7: Running Analyses
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-8-pasting-output">
+    Step 8: Pasting output
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Analyzing Data</h1>
+<p>Once the data management has been done, there are several steps involved in performing data analysis, as follows:</p>
+<p><a href="#step-1-gathering-the-data">#Step 1: Gathering the data</a> (off participants’ computers, if necessary).</p>
+<p><a href="#step-2-merge-logsheet-and-data-review-debriefs">#Step 2: Merge logsheet and data, review debriefs</a> (Prepare the Excel data sheet by merging the logsheet and data together)</p>
+<p><a href="#step-3-making-the-data-spss-compatible">#Step 3: Making the data SPSS compatible</a></p>
+<p><a href="#step-4-reviewing-data-in-spss">#Step 4: Reviewing data in SPSS</a></p>
+<p><a href="#step-5-selecting-cases-labeling-values-recoding-variables-computing-variables">#Step 5: Selecting cases, labeling values, recoding variables, computing variables</a>, check computed variables with correlations/reliabilities.</p>
+<p><a href="#step-6-determining-appropriate-analyses">#Step 6: Determining appropriate analyses</a></p>
+<p><a href="#step-7-running-analyses">#Step 7: Running Analyses</a> in SPSS</p>
+<p><a href="#step-8-pasting-output">#Step 8: Pasting output</a> and make a data report.</p>
+<h2 id="step-1-gathering-the-data">Step 1: Gathering the data<a class="headerlink" href="#step-1-gathering-the-data" title="Permanent link">¶</a></h2>
+<p>Getting data either entered or checked from paper questionnaires or downloaded from Qualtrics is the first step to analyzing the data. All of the data collected through Qualtrics can be saved as an SPSS file. NOTE: If you are downloading data from Qualtrics, skip to Step 5: Selecting cases, labeling, etc. Other important documents, such as the log sheet, need to be incorporated with the consolidated data. Researchers must review debrief information (either entered/checked from paper debriefs or downloaded from Qualtrics).</p>
+<p>Normally, getting the data off the computers is done at the end of the study. This process requires you to do the following:
+a. Create a soft copy of the logsheet from the hard copy
+b. Retrieve the data from paper questionnaires or Qualtrics and consolidate them into one excel sheet with the logsheet data.
+c. Check the retrieved data, making sure it matches with the logsheet.</p>
+<p><strong>Creating the logsheet</strong></p>
+<ol>
+<li>Start by opening a new Excel document</li>
+<li>Take the logsheet from the study you are consolidating data from and then replicate it on the first tab on the Excel document. Label this tab “logsheet.”</li>
+<li>
+<p>To replicate the data, use the cells on the top row for each of the items on the logsheet (i.e. subj #, experimenter, date...).</p>
+<p><img alt="File Images Holder/Analyzing Data/createLogsheet.png" src="../../File%20Images%20Holder/Analyzing%20Data/createLogsheet.png"/></p>
+</li>
+<li>
+<p>Then fill each cell with the appropriate information that corresponds to the above column variable and the logsheet.</p>
+</li>
+<li>
+<p>Freeze the top row by going to View &gt; Freeze Panes &gt; Freeze Top Row</p>
+<p><img alt="File Images Holder/Analyzing Data/excelFreezePanel.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelFreezePanel.png"/></p>
+</li>
+<li>
+<p>Creating the logsheet is finished once the hard copy has been fully duplicated in Excel.</p>
+</li>
+</ol>
+<p><strong>Getting data off the computers</strong></p>
+<ol>
+<li>Go on <a href="http://qualtrics.com/">Qualtrics.com</a> and sign into SIBL’s account using the lab’s email address and password.</li>
+<li>After signing in, you should now be able to see the homepage which contains a list of all the questionnaires or surveys that are being administered by our lab.</li>
+<li>To retrieve the data, we then need to click the name of the questionnaire that we are interested in.</li>
+<li>We will be directed to the “Edit Survey” page which gives us the option to edit the survey. Then, proceed to click “Data &amp; Analysis” on the grey navigation bar located at the top of the page.</li>
+<li>After being directed to the “Data &amp; Analysis” page, click on the button that says “Export &amp; Import”. The button is located on the right side of the screen.</li>
+<li>Then, proceed to click “Export Data” and then click “Download Data Table” shown in pop up box.</li>
+<li>Then, make sure that you are downloading a CSV/SPSS/Excel file and have “Download all fields” checked before you click the green “Download button.”</li>
+<li>At this point, the data will be downloaded automatically.</li>
+</ol>
+<p><strong>Checking the data</strong></p>
+<p>Compare the retrieved data to information on the logsheet. You should make sure of the following:</p>
+<ol>
+<li>Filter out participants with subject numbers/data that say “999 or 9999” (indicating a test run done by an RA or a no-show by a participant) when selecting cases.</li>
+</ol>
+<p><img alt="File Images Holder/Analyzing Data/excelDelete999.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelDelete999.png"/></p>
+<figcaption align="center"><b>Line number 17 has a subject number of 1, so we would need to exclude this line in the data analysis.</b></figcaption>
+<ol>
+<li>
+<p>Make sure that there isn’t any missing data (i.e. if the logsheet says that subject 805 was run on 1/16/08, but there is no trace of subject 805 in the retrieved data).</p>
+<p>If there is missing data, try looking for it in the data you retrieved (it may have just been a typo) or try looking for it on the other computers and double check the computer it was supposed to come from. If you still cannot find it, then make a note of it, and then ask the RA who ran that subject.</p>
+</li>
+</ol>
+<p>Once all the data has been consolidated and everything matches up with the logsheet, save your Excel file into the data folder in the appropriate study you collected from as <strong><em>Name of study</em> Consolidated data *date</strong>*.</p>
+<h2 id="step-2-merge-logsheet-and-data-review-debriefs">Step 2: Merge logsheet and data, review debriefs<a class="headerlink" href="#step-2-merge-logsheet-and-data-review-debriefs" title="Permanent link">¶</a></h2>
+<p>For studies conducted on Qualtrics, data will be on the results page for download and we need to combine it with logsheet data if it was ran in lab. If the study was run online there will be no logsheet. The first step is to merge them together by bringing the logsheet information onto the data sheet. For this we use Excel formulas.
+1. Open the Excel data file to be analyzed. 
+2. Copy all the variable names from the logsheet except the first one (subject number) and paste them on the “data” sheet in the first row after the last variable on that sheet. 
+<img alt="File Images Holder/Analyzing Data/excelDataEntering.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelDataEntering.png"/></p>
+<ol>
+<li>Put your cursor in the top rightmost empty cell (in this case column DN row 2). Click insert function (fx) and find the “VLOOKUP” function.</li>
+</ol>
+<p><img alt="File Images Holder/Analyzing Data/excelInsertFunc.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelInsertFunc.png"/></p>
+<ol>
+<li>
+<p>Enter the values as described below. Press okay.</p>
+<p><img alt="File Images Holder/Analyzing Data/excelFunctionArg.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelFunctionArg.png"/></p>
+</li>
+<li>
+<p>The formula should look up the subject number and enter the appropriate value from the logsheet. Double check to make sure this is working.</p>
+</li>
+<li>Copy-paste the cell with the formula down for all the subjects.</li>
+<li>Copy-paste the cell with the formula over to the other variables. Change the column from “2” to “3”, etc.</li>
+<li>If there are missing values (i.e., a subject number that doesn’t have an entry on the logsheet), #N/A will show up in the cell. Those values need to be checked to figure out why they are not showing up.</li>
+<li>If there are blanks on the logsheet, they show up as “0” on the data sheet, which of course is a big problem because we don’t want missing values to be counted as “0” when we are calculating our statistics. To fix this, you have to edit the formula, by adding two more formulas to it: IF() and ISBLANK(). You can do this in the formula bar after clicking on one of the cells.</li>
+</ol>
+<p><img alt="File Images Holder/Analyzing Data/excelIF.png" src="../../File%20Images%20Holder/Analyzing%20Data/excelIF.png"/></p>
+<figcaption align="center"><b>This new formula says the following: If you look up the subject number in B2 on the logsheet and go over two columns and that cell is blank, then just put a blank in my cell. If the cell is not blank, then put the value that is in that cell in my cell.</b></figcaption>
+<ol>
+<li>You’ll need to recopy that formula down to the other rows and across to the other variables. Don’t forget to change the column numbers from “2” to “3”, “4”, etc.</li>
+<li>When using Excel formulas, make sure to carefully check several values to make sure they are working the way they are supposed to. Although formulas can save a lot of time, if even slightly incorrect, they can cause systematic errors that can contaminate an entire dataset.</li>
+</ol>
+<p>**Check Debrief Data/Questions</p>
+<p>Check debriefs to look for any red flags; the debrief questions (and responses) will either be included in the same Qualtrics survey as the original study as a set of debriefing questions or as an entirely separate Qualtrics survey.</p>
+<p>In either case, check the set of debriefing questions for any anomalies or red flags (e.g., 999s, odd participant responses).</p>
+<h2 id="step-3-making-the-data-spss-compatible">Step 3: Making the data SPSS compatible<a class="headerlink" href="#step-3-making-the-data-spss-compatible" title="Permanent link">¶</a></h2>
+<p>There are a couple of things you need to do to make the datasheet SPSS-compatible: </p>
+<ul>
+<li>
+<p>(1) Get rid of values that SPSS cannot read</p>
+<p>This step involves going through the data sheet and making sure there are not any values that SPSS cannot read. This includes doing the following:</p>
+<ol>
+<li>Checking to make sure there is no text in numerical fields. Text in numerical fields can occur for the following reasons:
+a.  Participants wrote an answer (e.g., “I don’t know”)
+b.  Coders entered a symbol (%)
+c.  Participants entered a range of values (5-6)
+In the case of (a) and (b), delete the text and put any interesting comments in the notes column. In the case of (c), convert it to a number by taking an average.</li>
+<li>Change any problematic variable names, including duplicate names and variable names with funny symbols or spaces.</li>
+<li>(2) Eliminate Excel formulas</li>
+</ol>
+<p>The next step in making the data SPSS compatible is to get rid of the Excel formulas.</p>
+<ol>
+<li>Create a new tab called “toSPSS”</li>
+<li>Copy all the values on the “data” tab</li>
+<li>Select the “toSPSS” tab</li>
+<li>Go to Paste &gt; Paste Values</li>
+<li>Check to make sure the formulas are gone.</li>
+<li>You can also just download it as an SPSS file.</li>
+</ol>
+</li>
+</ul>
+<p>**Importing data into SPSS from Excel</p>
+<p>Importing data into SPSS is very straightforward. Open SPSS and use the <strong>File &gt; Open</strong> command to navigate to the Excel file. (A dialog box may open on top of SPSS when you first open it, and you can also use that interface to open your file by selecting “Open an Existing Data Source” and selecting “More Files”.) Use the File Types drop down to select .xls. Select the “toSPSS” sheet.</p>
+<h2 id="step-4-reviewing-data-in-spss">Step 4: Reviewing data in SPSS<a class="headerlink" href="#step-4-reviewing-data-in-spss" title="Permanent link">¶</a></h2>
+<p>SPSS has three windows:</p>
+<ol>
+<li>Main window – what you see now<ol>
+<li>Data View tab – rows of data, like excel; one subject per row</li>
+<li>Variable View tab - where you see and edit information about your variables; one variable per row</li>
+</ol>
+</li>
+<li>Output window – after you run an analysis</li>
+<li>Syntax – recording analyses. Using syntax is an alternative to the point-and-click interface and is optional.</li>
+</ol>
+<p>Next, you’ll want to review the data to make sure it looks okay. Delete any extra rows and columns that SPSS may have brought in (signified by periods in the cells).</p>
+<p>Calculate frequencies for all the variables and scan through the output to make sure there aren’t any wacky unexpected values. To calculate frequencies, go to <strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong> and enter in the variables you would like frequencies for. You can also compute frequencies to see, for instance, how many males and females were in the study or what the majors were of the students. To calculate crosstabs (e.g., condition by gender), go to <strong>Analyze &gt; Descriptive Statistics &gt; Crosstabs</strong>.</p>
+<h2 id="step-5-selecting-cases-labeling-values-recoding-variables-computing-variables">Step 5: Selecting cases, labeling values, recoding variables, computing variables<a class="headerlink" href="#step-5-selecting-cases-labeling-values-recoding-variables-computing-variables" title="Permanent link">¶</a></h2>
+<p>This section demonstrates a variety of operations in SPSS that deal with cases (subjects) and variables.</p>
+<p>**Selecting cases</p>
+<aside>
+Many times, you will need to include only a subset of the participants (e.g., all the non-computer science majors or only U.S. citizens).
+</aside>
+<p><strong>Data &gt; Select Cases &gt; Click “If…”</strong></p>
+<p><img alt="File Images Holder/Analyzing Data/spssSelectCases.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssSelectCases.png"/></p>
+<p>In box, type the criteria you want (e.g., gender = “M” for males only OR ~ANY(major,"Computer Engineering", "Computer Science") for no CS or CE majors)</p>
+<ul>
+<li>Use Boolean logic (&amp;, |, ~=, ANY())</li>
+<li>String variables needs quotes around their values.</li>
+</ul>
+<aside>
+📍 String variables are case sensitive, so you will need to include any variants of participant responses (e.g., “computer science”, “Computer science”, “Computer Science”, etc.)
+
+</aside>
+<p>To select everyone, go back to <strong>Data &gt; Select Cases and select “All Cases”</strong></p>
+<p>**Labeling variable values</p>
+<p>It is good practice to label variable values so that the output is easier to understand. Let’s say you want to change the gender values from “M” and “F” to “male and “female.”</p>
+<p>In Variable view: label gender value s with “male” and “female”. Click on grey box in Values column.</p>
+<p><img alt="File Images Holder/Analyzing Data/spssValueLabels.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssValueLabels.png"/></p>
+<p>Enter M for Value and Male for Label; repeat for Female.</p>
+<p>In Data View: <strong>View &gt; Value Labels</strong>. When you do computations, the old values must still be used, but the labels will be shown in the output.</p>
+<p>**Recoding variables</p>
+<p>Sometimes, you need to recode variables from string to numeric, reverse-code a variable, or group participants together based on their answers. For instance, let’s say you want to change the year values from “Freshman,” “Sophomore,” etc to 1, 2, etc.</p>
+<p>Go to <strong>Transform &gt; Recode &gt; Into Different Variables</strong></p>
+<p><img alt="Untitled" src="File%20Images%20Holder/Analyzing%20Data/spssRecode.png"/></p>
+<p>Highlight “year” move it into the box
+Type “year_r” in Name &gt; Change</p>
+<p><img alt="Untitled" src="File%20Images%20Holder/Analyzing%20Data/spssRecode2.png"/></p>
+<p>Click on <strong>Old and New Values</strong>
+In <strong>Old Value</strong>, type Freshman
+In <strong>New Value</strong>, type “1”
+Click <strong>Add</strong>
+Repeat for Sophomore (1), Junior (2), and Senior (2)
+In Data View, scroll over to the right and you will see your new variable</p>
+<p>**Computing variables</p>
+<p>Anytime you need to create a new variable by performing a computation (e.g., adding two variables together), you use <strong>Transform &gt; Compute</strong>.</p>
+<p><img alt="File Images Holder/Analyzing Data/spssComputeVar.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssComputeVar.png"/></p>
+<p>In <strong>Target Variable</strong>, type new variable name (weightedgpa)
+In <strong>Numeric Expression</strong>, type computation (MEAN(currentgpa, majorgpa)</p>
+<p>When creating composite variables (i.e. combining scale items into one variable), make sure to use the "mean" function rather than using "sum" or manually adding up the values and dividing by the number of scale items. This will prevent missing values in the data from resulting in a missing or inaccurate composite score.</p>
+<p>When computing variables, RAs should check the new variable to see if it has good correlation/reliability (e.g., Pearson’s r, Cronbach’s alpha).</p>
+<p><strong>When a new variable is created by combining <em>just</em> two variables</strong> (as in this example), we use correlation to check the computed variable. To do this, go to <strong>Analyze &gt; Correlate &gt; Bivariate.</strong> </p>
+<p>The default settings should be sufficient, but to be explicit, you should select “Pearson”, “two-tailed”, and “flag significant correlations”. Any other statistical options are not necessary for the purposes of checking the correlation.</p>
+<p><strong>When a new variable is created by combining <em>more</em> than two variables</strong>, we use reliability to check the computed variable. To do this, go to <strong>Analyze &gt; Scale &gt; Reliability Analysis.</strong> Again, the default settings should be sufficient, but to be explicit, you should select “Alpha” for the reliability model. Any other statistical options are not necessary for the purposes of checking the reliability.</p>
+<h2 id="step-6-determining-appropriate-analyses">Step 6: Determining appropriate analyses<a class="headerlink" href="#step-6-determining-appropriate-analyses" title="Permanent link">¶</a></h2>
+<p>Next, you’ll want to determine what statistical analyses you need to perform. This can be a complicated question that can be assisted by a previous class or two in statistics. Below is a <strong>flowchart outlining</strong> the basic tests that social psychologists often conduct; note that it does not represent all the statistical tests out there, so you should use this as a guide rather than a definitive resource.</p>
+<p><img alt="File Images Holder/Analyzing Data/statsTreeDecision.png" src="../../File%20Images%20Holder/Analyzing%20Data/statsTreeDecision.png"/></p>
+<h2 id="step-7-running-analyses">Step 7: Running Analyses<a class="headerlink" href="#step-7-running-analyses" title="Permanent link">¶</a></h2>
+<p>Once you have determined the analyses you want to run, you can point-and-click your way through almost all of the analyses.</p>
+<ul>
+<li><strong><em>T-tests</em> -</strong> Compare the means of two groups to each other<pre><code>Analyze &gt; Compare Means &gt; Independent samples t-test
+</code></pre>
+</li>
+</ul>
+<p><img alt="File Images Holder/Analyzing Data/spssIndTtest.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssIndTtest.png"/></p>
+<p>Click on <strong>Define Groups</strong> and put M and F (or whatever your original male/female values are) in Groups 1 and 2</p>
+<p>Reading output</p>
+<p><img alt="File Images Holder/Analyzing Data/spssOutput_IndTtest.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssOutput_IndTtest.png"/></p>
+<p>Women and men report being equally likely to major in computer science, t(3) = -1.63, ns.</p>
+<ul>
+<li><strong><em>2 x 2 ANOVA (one+ within subjects factor)</em> -</strong> Assess how two independent variables interact to impact a dependent variable<pre><code>Analyze &gt; General Linear Model &gt; Repeated Measures
+</code></pre>
+</li>
+</ul>
+<p><img alt="File Images Holder/Analyzing Data/spssRepeatedMeasures_define.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssRepeatedMeasures_define.png"/>
+Type in the name of the within-subjects factor and the number of levels (conditions) it has. Click <strong>Add</strong>, then click <strong>Define</strong>.</p>
+<p><img alt="File Images Holder/Analyzing Data/spssRepeatedMeasures.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssRepeatedMeasures.png"/>
+Select the within-subjects variable for (1) and (2). Select the between-subjects variable.</p>
+<p>Click on <strong>Plots</strong>
+Gender in <strong>horizontal axis</strong>
+Year_r as <strong>separate lines</strong>
+Click <strong>Add</strong></p>
+<p><strong>Reading output:</strong>
+<img alt="File Images Holder/Analyzing Data/spssOutput_Multivariate.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssOutput_Multivariate.png"/>
+    There is a significant gender x condition interaction, F(1, 40) = 7.24, p &lt; .05. Women are more interested in room 2 than room 1 while the opposite is true for men. (Look at the “room*sex_dc” column for the interaction of gender x condition.)</p>
+<ul>
+<li>
+<p><strong><em>2 x 2 ANOVA (both between subjects factors)</em></strong> - Assess how two independent variables interact to impact a dependent variable</p>
+<p>Analyze &gt; General Linear Model &gt; Univariate</p>
+</li>
+</ul>
+<p><img alt="File Images Holder/Analyzing Data/spssUnivariate.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssUnivariate.png"/></p>
+<p>Click on <strong>Plots</strong>
+Gender in <strong>horizontal axis</strong>
+Year_r as <strong>separate lines</strong>
+Click <strong>Add</strong></p>
+<p><img alt="File Images Holder/Analyzing Data/spssUnivariatePlot.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssUnivariatePlot.png"/></p>
+<p><strong>Reading output:</strong>
+<img alt="File Images Holder/Analyzing Data/spssOutput_Between.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssOutput_Between.png"/>
+    Gender * Year_r interaction not significant</p>
+<ul>
+<li>
+<p><strong><em>Chi squared analyses</em></strong> – Compares frequencies to each other</p>
+<pre><code>Analyze &gt; Descriptive Statistics &gt; Crosstabs
+</code></pre>
+<p><img alt="File Images Holder/Analyzing Data/spssCrossTabs.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssCrossTabs.png"/>
+Enter one independent variable in <strong>row(s)</strong> and another in <strong>column(s)</strong></p>
+<p>Click <strong>Statistics…</strong></p>
+<p>Check <strong>Chi Square</strong></p>
+<p>Reading the output:
+<img alt="File Images Holder/Analyzing Data/spssOutput_chiSquare.png" src="../../File%20Images%20Holder/Analyzing%20Data/spssOutput_chiSquare.png"/></p>
+</li>
+</ul>
+<p><strong>When you don’t have enough expected count, it means that the sample size is too small to be calculated</strong></p>
+<p>Gives the frequency of choice by gender and the p value (called “Asymp. Sig.” under Pearson Chi-Square)</p>
+<h2 id="step-8-pasting-output">Step 8: Pasting output<a class="headerlink" href="#step-8-pasting-output" title="Permanent link">¶</a></h2>
+<p>Saving your output is an option, but pasting the relevant parts of the output into a Word file is preferred so that you can annotate the results. To paste, select the relevant parts of the output and hit <strong>ctrl-K</strong>. Then simply paste into Word.  Sometimes you can also use the regular <strong>ctrl+C and ctrl+V</strong> to copy and paste. Researchers should be creating data reports to summarize their results. Talk to your lab manager/supervisor about giving you a data report template if they do not provide one.</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ce72ebac.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

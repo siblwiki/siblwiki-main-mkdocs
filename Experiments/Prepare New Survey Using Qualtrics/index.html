@@ -1,0 +1,709 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../Handling%20Data/" rel="prev"/>
+<link href="../Running%20Subjects%20in%20Lab/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.0" name="generator"/>
+<title>Prepare New Survey Using Qualtrics - SIBL Wiki</title>
+<link href="../../assets/stylesheets/main.402914a4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="pink" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#step-1-log-into-qualtrics">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="SIBL Wiki" class="md-header__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            SIBL Wiki
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Prepare New Survey Using Qualtrics
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="pink" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="pink" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="SIBL Wiki" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="SIBL Wiki">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    SIBL Wiki
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          About SIBL
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          About SIBL
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/For%20New%20Research%20Assistants/">
+        For New Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Expectations/">
+        Lab Expectations
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Location/">
+        Lab Location
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../About%20SIBL/Lab%20Roles%20and%20Structure/">
+        Lab Roles and Structure
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Data Analysis
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Data Analysis
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Analyzing%20Data/">
+        Analyzing Data
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Power%20Analyses%20using%20G%2APower/">
+        Power Analyses using G*Power
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Data%20Analysis/Simple%20Effects%20in%20SPSS%20using%20EMMEANS%20code/">
+        Simple Effects in SPSS using EMMEANS code
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Experiments
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          Experiments
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Getting%20IRB%20Approval/">
+        Getting IRB Approval
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Handling%20Data/">
+        Handling Data
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Prepare New Survey Using Qualtrics
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Prepare New Survey Using Qualtrics
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-log-into-qualtrics">
+    Step 1: Log into Qualtrics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-creating-a-survey">
+    Step 2: Creating a Survey
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-making-questions">
+    Step 3: Making Questions
+  </a>
+<nav aria-label="Step 3: Making Questions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#survey-flow">
+    Survey Flow
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#randomizer">
+    Randomizer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#embedded-data">
+    Embedded Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#branch">
+    Branch
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-checklist-before-launching">
+    Step 4: Checklist before launching
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-downloading-data">
+    Step 5: Downloading Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faq">
+    FAQ
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Running%20Subjects%20in%20Lab/">
+        Running Subjects in Lab
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Running%20Subjects%20on%20ORPP/">
+        Running Subjects on ORPP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Surveying%20on%20Campus/">
+        Surveying on Campus
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Grad Students &amp; Postdocs
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          Grad Students &amp; Postdocs
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Administrators/">
+        Administrators
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Getting%20feedback/">
+        Getting feedback
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Lab%20Expectations%20for%20Grads%20%26%20Postdocs/">
+        Lab Expectations for Grads &amp; Postdocs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Onboarding%20Checklist/">
+        Onboarding Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Online%20Data%20Collection/">
+        Online Data Collection
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Pre-Launch%20Checklist/">
+        Pre Launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Qualtrics%20Pre-launch%20Checklist/">
+        Qualtrics Pre launch Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Recruiting%20Research%20Assistants/">
+        Recruiting Research Assistants
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Grad%20Students%20%26%20Postdocs/Resources/">
+        Resources
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Literature Research
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+          Literature Research
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Books%20and%20Articles/">
+        Books and Articles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Literature%20Research/">
+        Literature Research
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Resources/">
+        Resources
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Literature%20Research/Zotero/">
+        Zotero
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Other Resources
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_7">
+<span class="md-nav__icon md-icon"></span>
+          Other Resources
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/UW%20RA%20Opportunities/">
+        UW RA Opportunities
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Other%20Resources/Updating%20Lab%20Website/">
+        Updating Lab Website
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Preparing for Publications
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_8_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Preparing for Publications
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Data%20Entry%20Checking/">
+        Data Entry Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Paper%20Submission%20Checklist/">
+        Paper Submission Checklist
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Proofreading/">
+        Proofreading
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Data%20Checking/">
+        Questionnaire Data Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaire%20Word%20Checking/">
+        Questionnaire Word Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Questionnaires%20vs.%20Results%20Checking/">
+        Questionnaires vs. Results Checking
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preparing%20for%20Publications/Reference%20Checking/">
+        Reference Checking
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Preregistration with OSF
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
+          Preregistration with OSF
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/How%20to%20Make%20OSF%20Documents/">
+        How to Make OSF Documents
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Preregistration%20with%20OSF/Preregistration/">
+        Preregistration
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-log-into-qualtrics">
+    Step 1: Log into Qualtrics
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-creating-a-survey">
+    Step 2: Creating a Survey
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-making-questions">
+    Step 3: Making Questions
+  </a>
+<nav aria-label="Step 3: Making Questions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#survey-flow">
+    Survey Flow
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#randomizer">
+    Randomizer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#embedded-data">
+    Embedded Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#branch">
+    Branch
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-checklist-before-launching">
+    Step 4: Checklist before launching
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-downloading-data">
+    Step 5: Downloading Data
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#faq">
+    FAQ
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Prepare New Survey Using Qualtrics</h1>
+<p>Step 1: Log into Qualtrics</p>
+<p>Step 2: Create a survey</p>
+<p>Step 3: Make questions</p>
+<p>Step 4: Checklist before launching</p>
+<p>Step 5: Download the data after data collection</p>
+<hr/>
+<h2 id="step-1-log-into-qualtrics">Step 1: Log into Qualtrics<a class="headerlink" href="#step-1-log-into-qualtrics" title="Permanent link">¶</a></h2>
+<p>To log into Qualtrics, go to <a href="https://www.qualtrics.com/">https://www.qualtrics.com/</a></p>
+<p>Contact lab manager for SIBL log-in credentials.</p>
+<p><strong>Note:</strong> Qualtrics will open on the page last opened by anyone on that folder and study.
+This is what Qualtrics looks like when you are logged in. On the left hand side, there are different folders that are organized by project or by graduate student. In the middle, are all the studies that have been created in that folder. You can see the titles of the surveys, the last time it was modified, when it was created, and even the number of responses.</p>
+<h2 id="step-2-creating-a-survey">Step 2: Creating a Survey<a class="headerlink" href="#step-2-creating-a-survey" title="Permanent link">¶</a></h2>
+<p>To create a survey, find the folder that corresponds to your project or graduate student. Click “Create New Project.” There are 4 options that will pop up:</p>
+<ol>
+<li>From scratch: this option will give you a fresh and blank canvas to work with. This option also includes the ability to copy a previous survey and transfer it into the new one under the ‘How do you want to start your survey?’ tab.</li>
+<li>Project templates: this option allows you to use one of the many templates developed by subject-matter experts</li>
+<li>COVID-19 projects: this option allows you to use a template that considers the changing expectations as a result of COVID-19</li>
+<li>Academic project templates: this option provides templates that are developed by experts in education<ul>
+<li>To keep the naming consistent, refer to your project manager or follow the following format:
+    &gt;Study name – description or location #<pre><code>For example: 
+    - Foster Pre-Test II Fall 2018 MTurk
+    - “Foster Pre-Test” is the title, “II” indicates the version number, and “MTurk” indicates where the study is being run at.
+    - Bridging Historical and Current Events III Pilot 2 – Debrief
+    - “Bridging Historical and Current Events” is the title, “III” is the version, “Pilot 2” is the version of the pilot, and “Debrief” specifies that this is the debriefing form rather than the actual study.
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>This is what your survey should look like. The main portion of the screen should have all the questions and blocks that you have added. On the left-hand side, there’s a bar with different options related to the question; you can change the question type and add other functions here. You can also click the “Preview” button to see what your survey looks like, through a participant’s perspective. You would use this bar the most to validate questions (requesting a response from participants) and to change the question type.</p>
+<p>Blocks are the different pages of questions that the participants see. For example, block 1 consists of all the questions participants will see on the first page of the survey. To add a new block, click “Add Block.”</p>
+<h2 id="step-3-making-questions">Step 3: <strong>Making Questions</strong><a class="headerlink" href="#step-3-making-questions" title="Permanent link">¶</a></h2>
+<p>Click “Add New Question,” and Qualtrics should give you a choice of question format. The most common question types are: descriptive text, multiple choice, and text entry.</p>
+<h3 id="survey-flow"><strong>Survey Flow</strong><a class="headerlink" href="#survey-flow" title="Permanent link">¶</a></h3>
+<p>Click on the “Survey Flow” bubble in the left-hand bar, and the following screen should appear.</p>
+<p>This gives you a more graphic view of your survey. Grey blocks hold your questions and each block corresponds to the blocks you created for the survey. Be sure to save your changes in survey flow before trying to use your survey or clicking out of it. If you don’t, nothing you added to survey flow will be saved.</p>
+<h3 id="randomizer"><strong>Randomizer</strong><a class="headerlink" href="#randomizer" title="Permanent link">¶</a></h3>
+<p>This allows you to randomize the number of times a participant can see block(s). This is the purple block in the picture above. Clicking “Evenly Present Elements” would allow the different elements underneath the randomizer block to appear an even number of times.</p>
+<h3 id="embedded-data"><strong>Embedded Data</strong><a class="headerlink" href="#embedded-data" title="Permanent link">¶</a></h3>
+<p>This allows you to assign a word or number to the participant when they take the study. This is the green block in the picture above. For example, if you have 2 conditions (short and long), you would take the following steps:</p>
+<ol>
+<li>Type in “Condition into the “Create New Field or Choose from Dropdown” box</li>
+<li>The box should change to “Condition = Custom Value”</li>
+<li>Type in “Short” for the short condition</li>
+<li>Repeat this for the “Long” condition by creating another embedded data block</li>
+</ol>
+<h3 id="branch"><strong>Branch</strong><a class="headerlink" href="#branch" title="Permanent link">¶</a></h3>
+<p>This allows you to select which parts of the survey participants see, depending on their condition or how they answer a certain question. This is the blue block in the picture above. For example, Under the Branch block, the following would be presented to you:
+“This branch will not be triggered until you Add a Condition”
+If you click on “Add a Condition,” the following should appear:
+“Question   Select Question”</p>
+<p>To branch based on a question, click on “Select Question” and select the question that you want.
+For example, you would use this for consent. If the participant did not consent to taking the survey, you can branch their survey to the end and they would not be able to take it.</p>
+<ol>
+<li>Click the consent question and a select choice option should appear</li>
+<li>
+<p>Click on the “Do not consent” option and the following should appear</p>
+<p><code>“Question
+     Q# Please indicate one of the following:
+ I do not consent… in this study
+     Is Selected”</code></p>
+</li>
+</ol>
+<p>This indicates that if the answer to the consent question is selected, you’re able to redirect the participant. To redirect them to the end of the survey:</p>
+<ol>
+<li>Click “Add a New Element Here”</li>
+<li>Click on “End of Survey”</li>
+</ol>
+<p>You can preview how this works by saving the flow first and then clicking on the preview button. When you get to the question and you click “Do not consent,” you should be redirected to the end of the survey.</p>
+<p>To branch based on embedded data, click on “Question” and change it to “Embedded Data.” The following should appear:</p>
+<pre><code>“Embedded Data _____________ Is Equal to ___________”
+</code></pre>
+<p>Taking the example from embedded data and incorporating randomizer into it, we would be able to randomly present one of the two conditions. Branch would allow you to specifically present one of the two conditions IF it is equal to a specific condition.</p>
+<p>For example:</p>
+<pre><code>1. Enter “Condition” is equal to “Short”
+2. Drag the corresponding “Short” condition block under the branch
+
+</code></pre>
+<p>This means that if the participant was randomized into the Short condition, they would only see that block and not the Long condition.</p>
+<p><strong>Getting the Link for Subject Running</strong></p>
+<p>Go to “Distribution” and then click “Anonymous Link.”
+This will give you the link that you will use whenever you are running subjects. You can bookmark this page on the subject running computers you will be using for easy and handy access to the surveys when you are running participants.</p>
+<h2 id="step-4-checklist-before-launching">Step 4: Checklist before launching<a class="headerlink" href="#step-4-checklist-before-launching" title="Permanent link">¶</a></h2>
+<h2 id="step-5-downloading-data">Step 5: Downloading Data<a class="headerlink" href="#step-5-downloading-data" title="Permanent link">¶</a></h2>
+<p>Go to “Data &amp; Analysis” and then click “Export &amp; Import.” Click “Export Data.”</p>
+<p>From here, you can choose what type of file you want your data to be downloaded as. Usually, you will export data in the CSV format or SPSS format. Be sure to always choose “Use numeric values” whenever you export data.</p>
+<hr/>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h2>
+<ul>
+<li>
+<p>Can I copy questions from other surveys into my new survey?</p>
+<p><strong>Yes, you can!</strong> </p>
+<p>When you want to import questions in from other surveys, make sure that these questions are <strong>already in the SIBL library</strong> on Qualtrics. </p>
+<p><aside>
+🖱️ Add a block → Click “Import From Library…” → Click “Sibl Sibl” → Choose either the survey, block, or question library (this would depend on what you’re trying to import)</aside></p>
+
+<p>This can be used to import a <strong>demographic section</strong> into your survey. </p>
+<p><aside>
+🖱️ Click on “Import From Library…” → Click on the search bar → Type in “demographics” and scroll down until you see “SIBL Demographics.”</aside></p>
+
+<p>This survey has all of SIBL’s standard demographic questions. You can either select a few or import all of them.</p>
+</li>
+<li>
+<p>How do I name questions?</p>
+<p>You can change the names of the questions in the main section of your survey. If you see on the top of every question you’ve created, there’s a title or name that comes with it. It’s typically going to say “Q#” where the # is replaced with an actual number and the number correlates to how many questions you’ve added into your survey.
+To change this, just click on the name and it should allow you to change this.
+When naming variables we typically use Camel Case, lowercaseUppercaseUppercase (e.g. howLikelyApply). </p>
+<p>In the demographics section, we use the naming scheme used in the SIBL Demographics survey. Look at this survey for the standard names we assign each demographics question.</p>
+</li>
+<li>
+<p>How do I randomize a set of questions across participants but present them in the same order within the survey (e.g. randomize the order of conditions, while keeping the order the same within the survey)?</p>
+<p>First create embedded data fields for all the possible orders of the items and put them under a randomizer. Note you’ll want to name these embedded fields the exact same way that you want them shown (e.g. capitalized, spaced correctly).</p>
+<p>Next, within each of the questions in your survey, click “insert piped text” and select “embedded data” and the correct field to be inserted. Simply do this for all of the questions with the items to be randomized. Make sure to preview your survey to check for errors!</p>
+</li>
+</ul>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.ce72ebac.min.js"></script>
+<script src="../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>
