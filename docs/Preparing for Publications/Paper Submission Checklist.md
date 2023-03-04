@@ -38,4 +38,4 @@ Please check this list before submitting your paper (at each submission and also
 
 19.  Check cover letter page numbers
 
-20.  Check OSF files (see the checklist at the end of [[OSF - Preregistration]])
+20.  Check OSF files (see the checklist at the end of [[Preregistration]])

@@ -22,7 +22,7 @@ Please see the [[#Checklist for Publishing Paper]] for things that should occur 
 
 **Resources**
 
-You can find tutorials for making all of these materials (including pre-registrations) at [[OSF - How to Make OSF Documents]] OR visit this [public template](https://osf.io/k5wns/) to find 2 documents: a template and directions on how to preregister.
+You can find tutorials for making all of these materials (including pre-registrations) at [[How to Make OSF Documents]] OR visit this [public template](https://osf.io/k5wns/) to find 2 documents: a template and directions on how to preregister.
 
 ---
 

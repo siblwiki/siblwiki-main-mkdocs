@@ -29,3 +29,6 @@ Before being allowed to run subjects or handle data, RAs must complete the CITI 
 - The course takes a few hours, and when they are done, it will allow them to email themselves a certificate of completion that they can forward to you and/or can upload to the server (/Volumes/SIBL/0 Admin/RA apps and 499 materials/CITI Forms). Make sure to remind them to name the file according to other files already in the server.
 
 Additionally, please send the name and contact email of the RA(s) you have recruited to the lab manager so they can be added to the SIBL Teams account. At the beginning of each quarter, the lab manager will do a brief group orientation with all new RAs so they get to learn about the structure of SIBL and other logistical pieces of information (e.g., accessing the server).
+
+---
+**What tasks Grad/Postdoc can ask RA to do**
